@@ -1,0 +1,119 @@
+@value colors: '../../styles/variables.module.css';
+@value _orange from colors;
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  padding: 8px 14px;
+  margin: 1px;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.quantity_selector {
+  display: flex;
+  margin: 1px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+  justify-content: space-around;
+  background-color: lightgray;
+  font-size: 0.7rem;
+}
+
+.quantity_selector_button {
+  display: flex;
+  cursor: pointer;
+  width: 30px;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.quantity_selector_count {
+  display: flex;
+  width: 50px;
+  height: 100%;
+  margin: 1px;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.black {
+  background-color: _orange;
+  color: lightgray;
+}
+
+.orange {
+  background-color: black;
+  color: lightgray;
+}
+
+.gray {
+  background-color: gray;
+  color: black;
+  border: 1px solid black;
+}
+
+.categories {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.category_button {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin: 20px;
+  padding: 20px;
+  height: 125px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.category_button_title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 4px;
+  cursor: default;
+}
+
+.category_button_image {
+  position: relative;
+  top: -30px;
+  box-shadow: -2px 20px 10px rgba(0, 0, 0, 0.5);
+  margin: 4px;
+  height: 100%;
+  max-width: 100px;
+  border-radius: 10px;
+}
+
+.category_button_shop {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  color: grey;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.category_button_shop_arrow {
+  color: orange;
+  font-size: 14px;
+}

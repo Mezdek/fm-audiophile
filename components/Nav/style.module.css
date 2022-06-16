@@ -1,0 +1,64 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 70px;
+  color: rgb(30, 75, 60);
+  background-color: black;
+  color: floralwhite;
+  margin: 0 auto;
+  border-bottom : solid rgba(169, 169, 169, 0.5) 1px;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  width: 60px;
+  height: 100%;
+  padding: 0.5rem;
+  background: linear-gradient(
+    19deg,
+    red 30%,
+    yellow,
+     green 70%
+  );
+  color: white;
+  text-shadow: 0px 0.5px black, 0px -0.5px black, 0.5px 0px black, -0.5px 0px black;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.main ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: fit-content;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  /* border: solid 1px red; */
+}
+
+.main ul li {
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.main ul li:hover {
+  color: grey;
+}
+
+.cart {
+  height: 100%;
+  width: 25px;
+  filter: invert();
+  cursor: pointer;
+}

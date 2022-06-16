@@ -1,0 +1,60 @@
+{
+  "new": {
+    "id": 0,
+    "name": "XX99 MARK II Headphones",
+    "price": "2999",
+    "image": "/assets/headphone.jpg",
+    "itemsInTheBox": [
+      { "quantity": 1, "item": "Headphone Unit" },
+      { "quantity": 2, "item": "Replacemnet Earcups" },
+      { "quantity": 1, "item": "User Manual" },
+      { "quantity": 1, "item": "3.5mm 5m Audio Cable" },
+      { "quantity": 1, "item": "Travel Bag" }
+    ],
+    "description": "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast."
+  },
+  "all": [
+    {
+      "id": 0,
+      "name": "XX99 MARK II Headphones",
+      "price": "2999",
+      "image": "/assets/headphone.jpg",
+      "itemsInTheBox": [
+        { "quantity": 1, "item": "Headphone Unit" },
+        { "quantity": 2, "item": "Replacemnet Earcups" },
+        { "quantity": 1, "item": "User Manual" },
+        { "quantity": 1, "item": "3.5mm 5m Audio Cable" },
+        { "quantity": 1, "item": "Travel Bag" }
+      ],
+      "description": "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast."
+    },
+    {
+      "id": 1,
+      "name": "A5+ HOME MUSIC SYSTEM",
+      "price": "499",
+      "image": "/assets/speakers.jpg",
+      "itemsInTheBox": [
+        { "quantity": 1, "item": "Headphone Unit" },
+        { "quantity": 2, "item": "Replacemnet Earcups" },
+        { "quantity": 1, "item": "User Manual" },
+        { "quantity": 1, "item": "3.5mm 5m Audio Cable" },
+        { "quantity": 1, "item": "Travel Bag" }
+      ],
+      "description": "The A5+ premium powered speakers are a complete home music system with bold stereo sound that fills any room. Wired or wireless connections including aptX-HD Bluetooth from your phone, tablet or computer, or good old analog from that vintage turntable or 80's Sony tape deck."
+    },
+    {
+      "id": 2,
+      "name": "Lenovo HT05 TWS Earphones",
+      "price": "26.70",
+      "image": "/assets/earphones2.jpg",
+      "itemsInTheBox": [
+        { "quantity": 1, "item": "Headphone Unit" },
+        { "quantity": 2, "item": "Replacemnet Earcups" },
+        { "quantity": 1, "item": "User Manual" },
+        { "quantity": 1, "item": "3.5mm 5m Audio Cable" },
+        { "quantity": 1, "item": "Travel Bag" }
+      ],
+      "description": "Precise and accurate sound with excellent sound experience is all you need! The Lenovo HT05 TWS earphones can provide you that. Multi-functional touch control that supports switch songs, phone call, and volume control is just one of the advantages of these earphones."
+    }
+  ]
+}

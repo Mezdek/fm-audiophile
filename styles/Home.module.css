@@ -1,0 +1,9 @@
+.main_section {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  font-size: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
