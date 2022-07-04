@@ -1,11 +1,13 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Image from "next/image";
 import style from "./style.module.css";
 
 export default function CategoryButton({ name, icon, href }) {
   return (
     <div className={style.category_button}>
-      <img src={icon} alt={name} className={style.category_button_image} />
+      <div className={style.category_button_image}>
+        <Image src={icon} alt={name} layout="fill" objectFit="contain" />
+      </div>
       <div className={style.category_button_title}>{name}</div>
       <div className={style.category_button_shop}>
         <a className={style.category_button_shop} href={href}>

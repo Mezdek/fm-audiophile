@@ -48,12 +48,18 @@
   font-size: 12px;
 }
 .icons {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-self: flex-end;
   filter: invert();
   cursor: pointer;
 }
-.icons img {
+
+.social_links {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 30px;
   margin: 0 5px;
 }

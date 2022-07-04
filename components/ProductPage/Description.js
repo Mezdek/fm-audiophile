@@ -1,16 +1,14 @@
 import React from "react";
 import style from "./style.module.css";
 
-import InTheBox from "./InTheBox";
+import Items from "./Items";
+import Features from "./Features";
 
-export default function Description({ features, itemsInTheBox }) {
+export default function Description({ features, items }) {
   return (
-    <div className={style.description_main}>
-      <div className={style.description_features}>
-        <h1 className={style.description_header}>Features</h1>
-        <p>{features}</p>
-      </div>
-      <InTheBox itemsInTheBox={itemsInTheBox} />
+    <div className={style.description}>
+      <Features features={features} />
+      <Items items={items} />
     </div>
   );
 }

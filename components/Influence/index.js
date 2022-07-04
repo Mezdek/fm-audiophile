@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Image from "next/image";
 import style from "./style.module.css";
 
 const story = {
@@ -15,7 +15,12 @@ export default function Influence() {
         <div className={style.text}>{story.body}</div>
       </div>
       <div className={style.right}>
-        <img className={style.image} src={story.image} alt={story.title} />
+        <Image
+          src={story.image}
+          alt={story.title}
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ export default function ProductPage({ product }) {
         type="buying"
       />
       <Description
-        itemsInTheBox={product.itemsInTheBox}
+        items={product.itemsInTheBox}
         features={product.description}
       />
     </div>

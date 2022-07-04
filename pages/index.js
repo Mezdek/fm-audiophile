@@ -1,3 +1,5 @@
+import React from "react";
+
 import Head from "next/head";
 import style from "../styles/Home.module.css";
 
@@ -17,10 +19,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <ProductCard newProduct={true} product={products.new} />
+        <ProductCard product={products[0]} />
         <div className={style.main_section}>
           <Categories />
-          {products.all.map((product, index) => (
+          {products.map((product, index) => (
             <ProductCard key={index} product={product} flip={index % 2} />
           ))}
           <Influence />

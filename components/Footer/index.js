@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import style from "./style.module.css";
+import Image from "next/image";
 import Link from "next/link";
 
 const links = [
@@ -8,6 +8,11 @@ const links = [
   { href: "/", label: "About" },
   { href: "/", label: "Products" },
   { href: "/", label: "Contact" },
+];
+const socialLinks = [
+  { href: "/", label: "Facebook", ico: "/assets/facebook.png" },
+  { href: "/", label: "Twitter", ico: "/assets/twitter.png" },
+  { href: "/", label: "Instagram", ico: "/assets/instagram.png" },
 ];
 
 export default function Footer() {
@@ -33,24 +38,16 @@ export default function Footer() {
           </ul>
         </div>
         <div className={style.icons}>
-          <img
-            src='/assets/facebook.png'
-            alt={"facebook"}
-            width={"25px"}
-            height={"25px"}
-          />
-          <img
-            src='/assets/instagram.png'
-            alt={"instagram"}
-            width={"25px"}
-            height={"25px"}
-          />
-          <img
-            src='/assets/twitter.png'
-            alt={"twitter"}
-            width={"25px"}
-            height={"25px"}
-          />
+          {socialLinks.map((link, id) => (
+            <a key={id} href={link.href} className={style.social_links}>
+              <Image
+                src={link.ico}
+                alt={link.label}
+                layout="fill"
+                objectFit="contain"
+              />
+            </a>
+          ))}
         </div>
       </div>
     </div>

@@ -1,3 +1,5 @@
+@value vars: '../../styles/variables.module.css';
+@value cart_items from vars;
 .main {
   display: flex;
   justify-content: space-between;
@@ -8,7 +10,7 @@
   background-color: black;
   color: floralwhite;
   margin: 0 auto;
-  border-bottom : solid rgba(169, 169, 169, 0.5) 1px;
+  border-bottom: solid rgba(169, 169, 169, 0.5) 1px;
   padding: 20px;
 }
 
@@ -17,14 +19,10 @@
   width: 60px;
   height: 100%;
   padding: 0.5rem;
-  background: linear-gradient(
-    19deg,
-    red 30%,
-    yellow,
-     green 70%
-  );
+  background: linear-gradient(19deg, red 30%, yellow, green 70%);
   color: white;
-  text-shadow: 0px 0.5px black, 0px -0.5px black, 0.5px 0px black, -0.5px 0px black;
+  text-shadow: 0px 0.5px black, 0px -0.5px black, 0.5px 0px black,
+    -0.5px 0px black;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -57,8 +55,19 @@
 }
 
 .cart {
+  position: relative;
   height: 100%;
   width: 25px;
   filter: invert();
   cursor: pointer;
+  color: orange;
+}
+.cart_count {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -30%;
+  top: 0;
+  bottom: 0;
 }

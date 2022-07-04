@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Image from "next/image";
 import style from "./style.module.css";
 
 const data = {
@@ -12,15 +12,15 @@ export default function Collage() {
   return (
     <div className={style.container}>
       <div className={style.secondary}>
-        <div className={style.top} style={{backgroundImage:`url(${data.second})`}}>
-          {/* <img className={style.image} src={data.second} alt={"pic"} /> */}
+        <div className={style.top}>
+          <Image src={data.second} alt="idk" layout="fill" objectFit="cover" />
         </div>
-        <div className={style.bottom} style={{backgroundImage:`url(${data.third})`}}>
-          {/* <img className={style.image} src={data.third} alt={"pic"} /> */}
+        <div className={style.bottom}>
+          <Image src={data.third} alt="idk" layout="fill" objectFit="cover" />
         </div>
       </div>
-      <div className={style.primary} style={{backgroundImage:`url(${data.first})`}}>
-        {/* <img className={style.image} src={data.first} alt={"pic"} /> */}
+      <div className={style.primary}>
+        <Image src={data.first} alt="idk" layout="fill" objectFit="cover" />
       </div>
     </div>
   );

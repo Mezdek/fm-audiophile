@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 import Layout from "../../components/Layout";
@@ -13,15 +13,16 @@ export default function Main() {
   const router = useRouter();
   const query = router.query;
 
-  const [id, setId] = React.useState();
-  const [product, setProduct] = React.useState();
+  const [name, setName] = useState();
+  const [product, setProduct] = useState();
 
   useEffect(() => {
-    setId(query.id);
+    setName(query.name);
   }, [query, router.isReady]);
+
   useEffect(() => {
-    setProduct(products.all[id]);
-  }, [id]);
+    setProduct(products.find((product) => product.name === name));
+  }, [name]);
 
   return (
     <div>

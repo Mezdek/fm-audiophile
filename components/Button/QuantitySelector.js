@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./style.module.css";
 
-export default function QuantitySelector() {
-  const [count, setCount] = useState(1);
+export default function QuantitySelector({ setCount, count }) {
   return (
     <div className={style.quantity_selector}>
       <div
