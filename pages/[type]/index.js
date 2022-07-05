@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 import Layout from "../../components/Layout";
 import Products from "../../components/Products";
 import Cart from "../../components/Cart";
+import NoPage from "../../components/NoPage";
+import Loading from "../../components/Loading";
 
 export default function Index() {
   const router = useRouter();
@@ -24,9 +26,9 @@ export default function Index() {
         ) : type === "cart" ? (
           <Cart />
         ) : type === undefined ? (
-          <div style={{ color: "orange" }}> Loading...</div>
+          <Loading />
         ) : (
-          <div style={{ color: "orange" }}>404 Page Does Not Exist</div>
+          <NoPage />
         )}
       </Layout>
     </div>

@@ -9,7 +9,12 @@ import ProductCard from "../components/ProductPage/ProductCard";
 import Influence from "../components/Influence";
 
 import products from "../data/products.json";
-
+import Collage from "../components/Collage";
+const test = {
+  first: products[1].image,
+  second: products[0].image,
+  third: products[2].image,
+};
 export default function Home() {
   return (
     <div>
@@ -22,9 +27,7 @@ export default function Home() {
         <ProductCard product={products[0]} />
         <div className={style.main_section}>
           <Categories />
-          {products.map((product, index) => (
-            <ProductCard key={index} product={product} flip={index % 2} />
-          ))}
+          <Collage data={test} />
           <Influence />
         </div>
       </Layout>

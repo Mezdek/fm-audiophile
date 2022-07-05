@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 import style from "./style.module.css";
 
-const data = {
+const test = {
   first: "/assets/woman.jpg",
   second: "/assets/earphones2.jpg",
   third: "/assets/marshal.jpg",
 };
 
-export default function Collage() {
+export default function Collage({ data = test }) {
   return (
     <div className={style.container}>
       <div className={style.secondary}>

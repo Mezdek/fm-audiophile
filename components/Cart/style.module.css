@@ -29,11 +29,9 @@
   position: relative;
   display: flex;
   height: 12rem;
-  margin: 0;
+  margin: 1rem 0;
   padding: 0;
-  margin-bottom: 1rem;
   width: 100%;
-  border: solid 1px red;
 }
 
 .image {
