@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import style from "./style.module.css";
+import Price from "../ProductPage/Price";
+
 import { useDispatch } from "react-redux";
 import {
   addOneToCart,
@@ -20,36 +22,46 @@ export default function CartItem({ item, quantity }) {
           objectFit="contain"
         />
       </div>
-      <div className={style.details}>
-        <p className={style.name}>{item.name}</p>
-        <p className={style.price}>Unit&apos;s Price: {item.price}</p>
-        <p className={style.price}>Total Price: {item.price * quantity}</p>
-        <div className={style.quantity_controller}>
-          <button
-            className={style.button}
-            onClick={() => {
-              dispatch(removeOneFromCart({ productId: item.id }));
-            }}
-          >
-            -
-          </button>
-          <span className={style.quantity}>{quantity}</span>
-          <button
-            className={style.button}
-            onClick={() => {
-              dispatch(addOneToCart({ productId: item.id }));
-            }}
-          >
-            +
-          </button>
-          <button
-            className={style.button}
-            onClick={() => {
-              dispatch(removeFromCart({ productId: item.id }));
-            }}
-          >
-            Remove All
-          </button>
+      <div className={style.top}>
+        <div className={style.info}>
+          <p className={style.name}>{item.name}</p>
+          <p className={style.price}>
+            <span className={style.price_tag}>Price</span>
+            <Price price={item.price} />
+            {/* <span className={style.price_value}>{item.price}</span> */}
+          </p>
+        </div>
+        <div className={style.bottom}>
+          <div className={style.quantity_controller}>
+            <button
+              className={style.button}
+              onClick={() => {
+                dispatch(removeOneFromCart({ productId: item.id }));
+              }}
+            >
+              -
+            </button>
+            <span className={style.quantity}>{quantity}</span>
+            <button
+              className={style.button}
+              onClick={() => {
+                dispatch(addOneToCart({ productId: item.id }));
+              }}
+            >
+              +
+            </button>
+            <button
+              className={style.button}
+              onClick={() => {
+                dispatch(removeFromCart({ productId: item.id }));
+              }}
+            >
+              Remove
+            </button>
+          </div>
+          <div className={style.total}>
+            Subtotal ({quantity} items): <Price price={item.price * quantity} />
+          </div>
         </div>
       </div>
     </div>
