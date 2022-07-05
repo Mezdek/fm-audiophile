@@ -7,7 +7,7 @@ export default function QuantitySelector({ setCount, count }) {
       <div
         className={style.quantity_selector_button}
         onClick={() => {
-          count > 0 && setCount(count - 1);
+          count > 1 && setCount(count - 1);
         }}
       >
         -

@@ -1,20 +1,20 @@
 import React from "react";
+import style from "./style.module.css";
 import { useSelector } from "react-redux";
+import CartItem from "./CartItem";
 import products from "../../data/products.json";
 
 export default function Index() {
   const cart = useSelector((state) => state.cart);
   return (
-    <div style={{ color: "orange" }}>
+    <div style={{ color: "orange" }} className={style.main}>
       {cart.length > 0 ? (
         cart.map((kind, index) => (
-          <div key={index}>
-            {products[kind.productId].name}
-            {" x "}
-            {kind.quantity}
-            {" = "}
-            {products[kind.productId].price * kind.quantity}
-          </div>
+          <CartItem
+            key={index}
+            item={products[kind.productId]}
+            quantity={kind.quantity}
+          />
         ))
       ) : (
         <div>No items in cart</div>

@@ -1,22 +1,18 @@
 import Link from "next/link";
-import Image from "next/image";
 import React from "react";
 import style from "./style.module.css";
-import cartIcon from "../../public/assets/shopping-cart.png";
-import { useSelector } from "react-redux";
+import CartIcon from "../Cart/CartIcon";
 
 export default function Nav() {
   const links = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/", label: "Products" },
+    { href: "/all", label: "Products" },
     { href: "/contact", label: "Contact" },
   ];
-  const cart = useSelector((state) => state.cart);
-  const cartCount = cart.reduce((sum, cur) => sum + cur.quantity, 0);
 
   return (
-    <div className={style.main} style={{ "--cart_items": "bluuu" }}>
+    <div className={style.main}>
       <div className={style.logo}>LOGO</div>
       <ul>
         {links.map((link, id) => (
@@ -25,15 +21,7 @@ export default function Nav() {
           </li>
         ))}
       </ul>
-      <a className={style.cart} href={"/cart"}>
-        <span className={style.cart_count}>{cartCount}</span>
-        <Image
-          src={cartIcon}
-          alt={"shopping cart"}
-          layout="fill"
-          objectFit="cover"
-        />
-      </a>
+      <CartIcon />
     </div>
   );
 }

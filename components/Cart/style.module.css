@@ -1,0 +1,44 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 50px;
+  filter: invert();
+  cursor: pointer;
+  color: orange;
+}
+
+.count {
+  position: relative;
+  display: block;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  height: 12rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: solid 1px red;
+}
+
+.image {
+  position: relative;
+  display: block;
+  width: 30%;
+  height: 100%;
+}
