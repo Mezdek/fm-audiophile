@@ -12,9 +12,9 @@ export default function Total() {
     0
   );
   return (
-    <p className={style.total}>
+    <div className={style.total}>
       Total ({cartCount} Items):
       <Price price={cartTotal} />
-    </p>
+    </div>
   );
 }

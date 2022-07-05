@@ -20,7 +20,7 @@ export default function Collage({ data = test }) {
         </div>
       </div>
       <div className={style.primary}>
-        <Image src={data.first} alt="idk" layout="fill" objectFit="cover" />
+        <Image src={data.first} alt="idk" layout="fill" objectFit="cover" priority />
       </div>
     </div>
   );

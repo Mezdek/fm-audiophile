@@ -20,16 +20,16 @@ export default function CartItem({ item, quantity }) {
           alt={item.name}
           layout="fill"
           objectFit="contain"
+          priority
         />
       </div>
       <div className={style.top}>
         <div className={style.info}>
           <p className={style.name}>{item.name}</p>
-          <p className={style.price}>
+          <div className={style.price}>
             <span className={style.price_tag}>Price</span>
             <Price price={item.price} />
-            {/* <span className={style.price_value}>{item.price}</span> */}
-          </p>
+          </div>
         </div>
         <div className={style.bottom}>
           <div className={style.quantity_controller}>

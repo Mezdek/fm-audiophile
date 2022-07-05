@@ -38,6 +38,7 @@ export default function ProductCard({
           alt={product.name}
           layout="fill"
           objectFit="cover"
+          priority
         />
       </div>
     </div>
