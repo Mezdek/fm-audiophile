@@ -10,9 +10,9 @@ const links = [
   { href: "/", label: "Contact" },
 ];
 const socialLinks = [
-  { href: "/", label: "Facebook", ico: "/assets/icons/facebook.png" },
-  { href: "/", label: "Twitter", ico: "/assets/icons/twitter.png" },
-  { href: "/", label: "Instagram", ico: "/assets/icons/instagram.png" },
+  { href: "/", label: "Facebook", ico: "/assets/icons/facebook.webp" },
+  { href: "/", label: "Twitter", ico: "/assets/icons/twitter.webp" },
+  { href: "/", label: "Instagram", ico: "/assets/icons/instagram.webp" },
 ];
 
 export default function Footer() {
