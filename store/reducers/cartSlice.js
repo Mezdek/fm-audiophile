@@ -32,10 +32,8 @@ export const cartSlice = createSlice({
     removeFromCart: (state, action) => {
       const { cart } = state;
       const { productId } = action.payload;
-      cart.splice(
-        cart.indexOf((item) => item.productId === productId),
-        1
-      );
+      const item = cart.find((item) => item.productId === productId);
+      cart.splice(cart.indexOf(item), 1);
     },
   },
 });

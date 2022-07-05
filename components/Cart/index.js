@@ -17,7 +17,7 @@ export default function Index() {
           />
         ))
       ) : (
-        <div>No items in cart</div>
+        <div className={style.empty}>Cart Is Empty</div>
       )}
     </div>
   );

@@ -3,7 +3,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 70%;
+  height: 50vh;
   margin: 1rem auto;
-  color: orchid;
+  color: orange;
+  font-size: 3rem;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import style from "./style.module.css";
 import { useSelector } from "react-redux";
-import cart_icon from "../../public/assets/icons/shopping-bag.png";
+import cart_icon from "../../public/assets/icons/shopping-bag.webp";
 
 export default function CartIcon() {
   const cart = useSelector((state) => state.cart);

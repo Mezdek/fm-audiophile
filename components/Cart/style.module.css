@@ -13,9 +13,7 @@
   align-items: flex-end;
   height: 100%;
   width: 50px;
-  filter: invert();
   cursor: pointer;
-  color: orange;
 }
 
 .count {
@@ -23,6 +21,7 @@
   display: block;
   margin: 5px;
   font-size: 1.2rem;
+  color: orange;
 }
 
 .item {
@@ -39,4 +38,15 @@
   display: block;
   width: 30%;
   height: 100%;
+}
+
+.empty {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  color: orange;
+  font-size: 3rem;
 }

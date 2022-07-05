@@ -2,11 +2,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 70%;
+  height: 50vh;
   margin: 1rem auto;
-  color: orchid;
+  color: orange;
+  font-size: 3rem;
 }
+
 .rolling {
   position: relative;
   display: flex;
@@ -17,7 +21,7 @@
   animation: rolling 1s infinite linear;
 }
 
-.text{
+.text {
   display: block;
   margin: 1rem;
 }

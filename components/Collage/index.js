@@ -3,9 +3,9 @@ import Image from "next/image";
 import style from "./style.module.css";
 
 const test = {
-  first: "/assets/woman.jpg",
-  second: "/assets/earphones2.jpg",
-  third: "/assets/marshal.jpg",
+  first: "/assets/images/woman.webp",
+  second: "/assets/images/earphones2.webp",
+  third: "/assets/images/marshal.webp",
 };
 
 export default function Collage({ data = test }) {

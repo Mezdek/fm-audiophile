@@ -5,7 +5,7 @@
     "type": "headphones",
     "name": "XX99 MARK II Headphones",
     "price": "2999",
-    "image": "/assets/images/headphone.jpg",
+    "image": "/assets/images/headphone.webp",
     "itemsInTheBox": [
       { "quantity": 1, "name": "Headphone Unit" },
       { "quantity": 2, "name": "Replacemnet Earcups" },
@@ -21,7 +21,7 @@
     "type": "speakers",
     "name": "A5+ HOME MUSIC SYSTEM",
     "price": "499",
-    "image": "/assets/images/speakers.jpg",
+    "image": "/assets/images/speakers.webp",
     "itemsInTheBox": [
       { "quantity": 1, "name": "Headphone Unit" },
       { "quantity": 2, "name": "Replacemnet Earcups" },
@@ -37,7 +37,7 @@
     "type": "earphones",
     "name": "Lenovo HT05 TWS Earphones",
     "price": "26.70",
-    "image": "/assets/images/earphones2.jpg",
+    "image": "/assets/images/earphones2.webp",
     "itemsInTheBox": [
       { "quantity": 1, "name": "Headphone Unit" },
       { "quantity": 2, "name": "Replacemnet Earcups" },
