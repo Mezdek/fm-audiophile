@@ -4,9 +4,9 @@ import style from "./style.module.css";
 import Items from "./Items";
 import Features from "./Features";
 
-export default function Description({ features, items }) {
+export default function Descreption({ features, items }) {
   return (
-    <div className={style.description}>
+    <div className={style.descreption}>
       <Features features={features} />
       <Items items={items} />
     </div>

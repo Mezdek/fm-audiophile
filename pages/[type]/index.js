@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
 import Layout from "../../components/Layout";
-import Products from "../../components/Products";
+import ProductsList from "../../components/Product/ProductsList";
 import Cart from "../../components/Cart";
 import NoPage from "../../components/NoPage";
 import Loading from "../../components/Loading";
@@ -22,7 +22,7 @@ export default function Index() {
     <div>
       <Layout>
         {categories.find((category) => category === type) ? (
-          <Products type={type} />
+          <ProductsList type={type} />
         ) : type === "cart" ? (
           <Cart />
         ) : type === undefined ? (

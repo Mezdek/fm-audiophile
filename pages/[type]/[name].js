@@ -5,7 +5,7 @@ import Layout from "../../components/Layout";
 import Categories from "../../components/Button/Categories";
 import Influence from "../../components/Influence";
 import Collage from "../../components/Collage";
-import ProductPage from "../../components/ProductPage";
+import Product from "../../components/Product";
 import Loading from "../../components/Loading";
 
 import products from "../../data/products.json";
@@ -29,7 +29,7 @@ export default function Main() {
     <div>
       <Layout>
         {product ? (
-          <ProductPage product={product} />
+          <Product product={product} />
         ) : (
           <Loading />
         )}

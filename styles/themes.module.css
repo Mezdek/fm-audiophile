@@ -1,0 +1,42 @@
+@value colors: './variables.module.css';
+@value _orange from colors;
+
+.black {
+  background-color: _orange !important;
+  color: lightgray !important;
+}
+
+.orange {
+  background-color: _orange !important;
+  color: black !important;
+}
+.orange button {
+  background-color: black !important;
+  color: _orange !important;
+}
+
+.gray {
+  background-color: _gray !important;
+}
+
+.gray button {
+  background-color: _gray !important;
+  color: black !important;
+  border: solid 1px black !important;
+}
+
+.white {
+  background-color: white !important;
+  color: darkgray !important;
+}
+
+.flipped {
+  flex-direction: row-reverse !important;
+  background-position: left !important;
+}
+
+.counter {
+  background-color: _orange !important;
+  color: black !important;
+  width: unset !important;
+}

@@ -1,0 +1,76 @@
+@value colors: '../../styles/variables.module.css';
+@value _orange, _gray, productCard_width from colors;
+
+/*++++++++++ Description styles ++++++++++*/
+
+.descreption {
+  width: 70%;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  color: darkgrey;
+}
+
+/*++++++++++ Features styles ++++++++++*/
+
+.features_main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.features_header {
+  margin-bottom: 1rem;
+}
+
+/*++++++++++ Items styles ++++++++++*/
+
+.items_main {
+  width: 15rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.items_header {
+  margin-bottom: 0.5rem;
+}
+
+.items_content {
+  display: flex;
+  flex-direction: column;
+}
+
+/*++++++++++ Item styles ++++++++++*/
+
+.item_main {
+  display: flex;
+  width: 100%;
+}
+
+.item_quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.4rem;
+  color: orange;
+}
+
+.item_name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.4rem;
+}
+
+/*++++++++++ Price styles ++++++++++*/
+
+.price {
+  display: flex;
+  padding: 0.2rem;
+}

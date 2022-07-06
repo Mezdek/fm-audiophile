@@ -7,5 +7,5 @@ const formatter = new Intl.NumberFormat("de-DE", {
 });
 
 export default function Price({ price }) {
-  return <div className={style.price}>{formatter.format(price)}</div>;
+  return <span className={style.price}>{formatter.format(price)}</span>;
 }

@@ -1,10 +1,16 @@
 import React from "react";
 import style from "./style.module.css";
+import themes from "../../styles/themes.module.css";
 
-export default function Button({ title, link, theme }) {
+export default function Button({ theme, role, title }) {
   return (
-    <div className={`${style.button} ${style[theme]}`}>
-      <a href={link}>{title}</a>
-    </div>
+    <button
+      className={`${style.button} ${themes[theme]}`}
+      onClick={() => {
+        typeof role === "function" && role(title);
+      }}
+    >
+      {typeof role === "string" ? <a href={role}>{title}</a> : title}
+    </button>
   );
 }

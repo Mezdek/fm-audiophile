@@ -1,5 +1,5 @@
 import React from "react";
-import Description from "./Description";
+import Descreption from "./Descreption";
 import ProductCard from "./ProductCard";
 
 export default function ProductPage({ product }) {
@@ -12,7 +12,7 @@ export default function ProductPage({ product }) {
         withPrice={true}
         type="buying"
       />
-      <Description
+      <Descreption
         items={product.itemsInTheBox}
         features={product.description}
       />

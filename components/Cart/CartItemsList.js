@@ -2,7 +2,7 @@ import React from "react";
 import style from "./style.module.css";
 import CartItem from "./CartItem";
 import products from "../../data/products.json";
-import Total from "./Total";
+import CartBuyBox from "./CartBuyBox";
 
 export default function CartItemsList({ cart }) {
   return (
@@ -14,7 +14,7 @@ export default function CartItemsList({ cart }) {
           quantity={item.quantity}
         />
       ))}
-      <Total />
+      <CartBuyBox />
     </div>
   );
 }

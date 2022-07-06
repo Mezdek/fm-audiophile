@@ -1,10 +1,10 @@
 import React from "react";
-import style from "./style.module.css";
-import Price from "../ProductPage/Price";
+import style from "../style.module.css";
+import Price from "../../Product/Price";
 import { useSelector } from "react-redux";
-import products from "../../data/products.json";
+import products from "../../../data/products.json";
 
-export default function Total() {
+export default function CartTotalPrice() {
   const cart = useSelector((state) => state.cart);
   const cartCount = cart.reduce((sum, cur) => sum + cur.quantity, 0);
   const cartTotal = cart.reduce(

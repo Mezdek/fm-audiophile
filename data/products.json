@@ -13,7 +13,7 @@
       { "quantity": 1, "name": "3.5mm 5m Audio Cable" },
       { "quantity": 1, "name": "Travel Bag" }
     ],
-    "description": "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast."
+    "descreption": "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast."
   },
   {
     "id": 1,
@@ -29,7 +29,7 @@
       { "quantity": 1, "name": "3.5mm 5m Audio Cable" },
       { "quantity": 1, "name": "Travel Bag" }
     ],
-    "description": "The A5+ premium powered speakers are a complete home music system with bold stereo sound that fills any room. Wired or wireless connections including aptX-HD Bluetooth from your phone, tablet or computer, or good old analog from that vintage turntable or 80's Sony tape deck."
+    "descreption": "The A5+ premium powered speakers are a complete home music system with bold stereo sound that fills any room. Wired or wireless connections including aptX-HD Bluetooth from your phone, tablet or computer, or good old analog from that vintage turntable or 80's Sony tape deck."
   },
   {
     "id": 2,
@@ -45,6 +45,6 @@
       { "quantity": 1, "name": "3.5mm 5m Audio Cable" },
       { "quantity": 1, "name": "Travel Bag" }
     ],
-    "description": "Precise and accurate sound with excellent sound experience is all you need! The Lenovo HT05 TWS earphones can provide you that. Multi-functional touch control that supports switch songs, phone call, and volume control is just one of the advantages of these earphones."
+    "descreption": "Precise and accurate sound with excellent sound experience is all you need! The Lenovo HT05 TWS earphones can provide you that. Multi-functional touch control that supports switch songs, phone call, and volume control is just one of the advantages of these earphones."
   }
 ]

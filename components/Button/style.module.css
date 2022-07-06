@@ -2,19 +2,22 @@
 @value _orange from colors;
 
 .button {
+  position: relative;
+  width: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  padding: 8px 14px;
-  margin: 1px;
-  background-color: black;
-  color: white;
-  font-size: 10px;
+  margin: 0.1rem;
+  padding: 0.5rem;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-radius: 0.3rem;
   cursor: pointer;
   user-select: none;
+  background-color: black;
+  color: white;
 }
 
 .buttonOnCard {
@@ -24,12 +27,12 @@
 
 .quantity_selector {
   display: flex;
-  margin: 1px;
+  margin: 0.1rem;
   text-transform: uppercase;
-  font-size: 10px;
+  /* font-size: 10px; */
   font-weight: bold;
-  width: 100px;
-  height: 40px;
+  width: 5rem;
+  height: 3rem;
   justify-content: space-around;
   background-color: lightgray;
   font-size: 0.7rem;
@@ -53,22 +56,6 @@
   justify-content: center;
   align-items: center;
   cursor: default;
-}
-
-.black {
-  background-color: _orange;
-  color: lightgray;
-}
-
-.orange {
-  background-color: black;
-  color: lightgray;
-}
-
-.gray {
-  background-color: gray;
-  color: black;
-  border: 1px solid black;
 }
 
 .categories {

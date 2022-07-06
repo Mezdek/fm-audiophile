@@ -5,7 +5,7 @@ import style from "../styles/Home.module.css";
 
 import Layout from "../components/Layout";
 import Categories from "../components/Button/Categories";
-import ProductCard from "../components/ProductPage/ProductCard";
+import ProductCard from "../components/Product/ProductCard";
 import Influence from "../components/Influence";
 
 import products from "../data/products.json";
