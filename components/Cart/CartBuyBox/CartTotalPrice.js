@@ -2,19 +2,19 @@ import React from "react";
 import style from "../style.module.css";
 import Price from "../../Product/Price";
 import { useSelector } from "react-redux";
-import products from "../../../data/products.json";
 
 export default function CartTotalPrice() {
-  const cart = useSelector((state) => state.cart);
-  const cartCount = cart.reduce((sum, cur) => sum + cur.quantity, 0);
-  const cartTotal = cart.reduce(
-    (sum, cur) => sum + cur.quantity * products[cur.productId].price,
+  const { items } = useSelector((state) => state.cart);
+  const { list } = useSelector((state) => state.products);
+  const itemsCount = items.reduce((sum, cur) => sum + cur.quantity, 0);
+  const itemsTotal = items.reduce(
+    (sum, cur) => sum + cur.quantity * list[cur.productId].price,
     0
   );
   return (
     <div className={style.total}>
-      Total ({cartCount} Items):
-      <Price price={cartTotal} />
+      Total ({itemsCount} Items):
+      <Price price={itemsTotal} />
     </div>
   );
 }

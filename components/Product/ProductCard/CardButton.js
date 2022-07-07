@@ -1,11 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 import Button from "../../Button";
 import AddToCart from "../../Button/AddToCart";
 
-import products from "../../../data/products.json";
-
 export default function CardButton({ type, productId }) {
+  const { list } = useSelector((state) => state.products);
   switch (type) {
     case "buying":
       return <AddToCart productId={productId} />;
@@ -13,7 +13,7 @@ export default function CardButton({ type, productId }) {
       return (
         <Button
           title={"See Product"}
-          role={`${products[productId].type}/${products[productId].name}`}
+          role={`${list[productId].type}/${list[productId].name}`}
         />
       );
     default:

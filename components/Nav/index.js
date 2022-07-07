@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import style from "./style.module.css";
+
 import CartIcon from "../Cart/CartIcon";
 
 export default function Nav() {

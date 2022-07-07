@@ -2,25 +2,38 @@ import React from "react";
 import Image from "next/image";
 import style from "./style.module.css";
 
-const test = {
-  first: "/assets/images/woman.webp",
-  second: "/assets/images/earphones2.webp",
-  third: "/assets/images/marshal.webp",
-};
+import { useSelector } from "react-redux";
 
-export default function Collage({ data = test }) {
+const temp = [
+  "/assets/images/woman.webp",
+  "/assets/images/earphones2.webp",
+  "/assets/images/marshal.webp",
+];
+
+export default function Collage({ data }) {
+  ///temporary values
+  const { list } = useSelector((state) => state.products);
+  const productImages = list.map((item) => item.image);
+  const images = data === "products" ? productImages : temp;
+
   return (
     <div className={style.container}>
       <div className={style.secondary}>
         <div className={style.top}>
-          <Image src={data.second} alt="idk" layout="fill" objectFit="cover" />
+          <Image src={images[1]} alt="idk" layout="fill" objectFit="cover" />
         </div>
         <div className={style.bottom}>
-          <Image src={data.third} alt="idk" layout="fill" objectFit="cover" />
+          <Image src={images[2]} alt="idk" layout="fill" objectFit="cover" />
         </div>
       </div>
       <div className={style.primary}>
-        <Image src={data.first} alt="idk" layout="fill" objectFit="cover" priority />
+        <Image
+          src={images[0]}
+          alt="idk"
+          layout="fill"
+          objectFit="cover"
+          priority
+        />
       </div>
     </div>
   );

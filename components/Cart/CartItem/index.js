@@ -10,7 +10,7 @@ import ItemTotalPrice from "./ItemTotalPrice";
 export default function CartItem({ item, quantity }) {
   return (
     <div className={style.item}>
-      <ItemImage name={item.neme} image={item.image} type={item.type} />
+      <ItemImage name={item.name} image={item.image} type={item.type} />
       <div className={style.top}>
         <div className={style.info}>
           <ItemName name={item.name} type={item.type} />

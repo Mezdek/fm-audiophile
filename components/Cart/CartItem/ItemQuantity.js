@@ -9,7 +9,7 @@ import {
   removeFromCart,
 } from "../../../store/reducers/cartSlice";
 
-export default function QuantityController({ id, quantity }) {
+export default function ItemQuantity({ id, quantity }) {
   const dispatch = useDispatch();
 
   return (

@@ -3,7 +3,7 @@ import style from "../style.module.css";
 import CartCheckout from "./CartCheckout";
 import CartTotalPrice from "./CartTotalPrice";
 
-export default function Index() {
+export default function CartBuyBox() {
   return (
     <div className={style.checkout_main}>
       <CartCheckout />
