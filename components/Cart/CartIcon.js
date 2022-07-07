@@ -5,11 +5,11 @@ import { useSelector } from "react-redux";
 import cart_icon from "../../public/assets/icons/shopping-bag.webp";
 
 export default function CartIcon() {
-  const cart = useSelector((state) => state.cart);
-  const cartCount = cart.reduce((sum, cur) => sum + cur.quantity, 0);
+  const { items } = useSelector((state) => state.cart);
+  const itemsCount = items.reduce((sum, cur) => sum + cur.quantity, 0);
   return (
     <a className={style.icon} href={"/cart"}>
-      <span className={style.count}>{cartCount}</span>
+      <span className={style.count}>{itemsCount}</span>
       <Image
         src={cart_icon}
         alt={"shopping cart"}

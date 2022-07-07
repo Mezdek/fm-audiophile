@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import style from "../style.module.css";
 
-export default function indexj({ image, name, type }) {
+export default function ItemImage({ image, name, type }) {
   return (
     <a className={style.image} href={`/${type}/${name}`}>
       <Image

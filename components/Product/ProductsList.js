@@ -1,20 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useSelector } from "react-redux";
 import ProductCard from "./ProductCard";
-import products from "../../data/products.json";
 
-export default function Index({ type }) {
-  const [list, setList] = useState([]);
-  useEffect(() => {
-    type === "all"
-      ? setList(products)
-      : setList(products.filter((product) => product.type === type));
-  }, [type]);
+export default function ProductsList({ type }) {
+  const { list } = useSelector((state) => state.products);
 
   return (
     <div>
-      {list.map((product, index) => (
-        <ProductCard key={index} product={product} />
-      ))}
+      {list
+        .filter((item) => {
+          return type === "all" ? item : item.type === type;
+        })
+        .map((product, index) => (
+          <ProductCard key={index} product={product} />
+        ))}
     </div>
   );
 }
